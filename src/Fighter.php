@@ -48,6 +48,6 @@ class Fighter
      */
     public function getDefence()
     {
-        return $this->defeance;
+        return $this->defence;
     }
 }
