@@ -14,5 +14,10 @@ $damage->setDamage(20);
 $defence = new \OXID\Defence();
 $defence->setDefence(15);
 
-$fighter = new \OXID\Fighter($life, $damage, $defence);
-var_dump($fighter->getLife(), $fighter->getDamage(), $fighter->getDefence());
+$firstFighter = new \OXID\Fighter($life, $damage, $defence);
+
+$secondFighter = new \OXID\Fighter($life, $damage, $defence);
+
+$firstFighterList = new \OXID\FighterList();
+$firstFighterList->addFighter($firstFighter);
+$firstFighterList->addFighter($secondFighter);
