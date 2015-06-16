@@ -14,4 +14,12 @@ class FighterTest extends \PHPUnit_Framework_TestCase
         $myFirstFighter->setLife($amountOfLife);
         $this->assertEquals($amountOfLife, $myFirstFighter->getLife());
     }
+
+    public function testSetGetDamage()
+    {
+        $amountOfDamage = 10;
+        $myFirstFighter = new Fighter();
+        $myFirstFighter->setDamage($amountOfDamage);
+        $this->assertEquals($amountOfDamage, $myFirstFighter->getDamage());
+    }
 }
