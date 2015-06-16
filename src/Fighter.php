@@ -10,14 +10,16 @@ class Fighter
     /** @var Life */
     private $life;
 
-    /** @var int */
+    /** @var Damage */
     private $damage = 0;
 
     /**
      * @param Life $life
+     * @param Damage $damage
      */
-    public function __construct($life) {
+    public function __construct($life, $damage) {
         $this->life = $life;
+        $this->damage = $damage;
     }
 
     /**
@@ -34,14 +36,6 @@ class Fighter
     public function getDamage()
     {
         return $this->damage;
-    }
-
-    /**
-     * @param int $damage
-     */
-    public function setDamage($damage)
-    {
-        $this->damage = $damage;
     }
 
 
