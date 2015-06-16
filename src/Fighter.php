@@ -7,26 +7,25 @@ namespace OXID;
 
 class Fighter
 {
-    /** @var int */
-    private $life = 0;
+    /** @var Life */
+    private $life;
 
     /** @var int */
     private $damage = 0;
 
     /**
-     * @return int
+     * @param Life $life
+     */
+    public function __construct($life) {
+        $this->life = $life;
+    }
+
+    /**
+     * @return Life
      */
     public function getLife()
     {
         return $this->life;
-    }
-
-    /**
-     * @param int $life
-     */
-    public function setLife($life)
-    {
-        $this->life = $life;
     }
 
     /**
