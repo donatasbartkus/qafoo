@@ -3,6 +3,8 @@
  * #PHPHEADER_OXID_LICENSE_INFORMATION#
  */
 
+require_once("vendor/autoload.php");
+
 $life = new \OXID\Life();
 $life->setLife(10);
 
